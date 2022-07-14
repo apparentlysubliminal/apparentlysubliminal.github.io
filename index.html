@@ -1,130 +1,122 @@
 <!DOCTYPE html>
+
 <head>
-<meta name="author" content="Andrew Loy">
+	<meta name="author" content="Andrew Loy">
+	<meta name="viewport" content="width= device-width,	height= device-height, user-scalable= no, initial-scale= 0.9, maximum-scale= 0.9, minimum-scale= 0.9, shrink-to-fit= no">
 
-<title>;</title>
-<style>
-	body {
-		font: 10px Verdana;
-		background-color: #c3ad80;
-		color: #ffffff;
-	}
+	<title>;</title>
 
-	a:link, a:visited, a:active {
-		color: #242526;
-		text-decoration: none;
-	}
-	
-	a:hover {
-		color: #cfe2f3;
-		text-decoration: none;
-	}
+	<style type="text/css">
 
+		body {
+			font: 10px Verdana;
+			background-color: #c3ad80;
+			color: #ffffff;
+		}
 
-	#titlebox {
-		background-color: #60605f;
-		height: 145px;
-		width: 100%;
-		font-size: 30px;
-		padding-left: 150px;
-	}
-	
-	.linkbanner {
-		letter-spacing: .1em;
-		font: 8px Verdana;
-		text-transform: uppercase;
-		background-color: #40403f;
-		valign: center;
-		text-align: left;
-		padding-left: 20px;
-		height: 40px;
-		border-left: 0px solid white;
-		border-right: 0px solid white;
-		border-top: 10px solid white;
-		border-bottom: 10px solid white;
-	}
-	
-	.linkbanner a:link, .linkbanner a:visited, .linkbanner a:active {
-		color: #cfe2f3;
-		text-decoration: none;
-	}
+		a:link, a:visited, a:active {
+			color: #242526;
+			text-decoration: none;
+		}
 		
-	.linkbanner a:hover {
-		color: #666f6c;
-		text-decoration: none;
-	}
-	
-	.leftcolumn {
-		background-color: #60605f;
-		valign: top;
-		text-align: justify;
-		width: 445px;
-		padding: 10px;
-		padding-left: 30px;
-		padding-right: 30px;
-	}
-	
-	.rightcolumn {
-		background-color: #60605f;
-		valign: top;
-		text-align: right;
-		width: 245px;
-		border-left: 30px solid white;
-		border-right: 0px solid white;
-		border-top: 0px solid white;
-		border-bottom: 0px solid white;
-		padding-left: 30px;
-		padding-right: 30px;
-	}
+		a:hover {
+			color: #cfe2f3;
+			text-decoration: none;
+		}
 
-	
-	#maintable {
-		border-left: 30px solid white;
-		border-right: 30px solid white;
-		border-top: 10px solid white;
-		border-bottom: 30px solid white;
-		width: 785px;
-		height: 800px;
-		margin: 50px 10px;
-	}
-	
-	#leftscroller {
-		overflow-y 		: scroll;
-		width 			: 100%;
-		height 			: 500px;
-		padding 		: 0px;
-		padding-left 	: 30px;
-		position 		: relative;
-		right			: 50px;
 
-	}
-	
-	.datetext {
-		font: normal bold 10px Verdana, sans-serif;
-		color: #a8a8a8;
-		text-transform: lowercase;
-		text-align: right;
-		margin: 0px;
-		margin-top: 10px;
-		margin-bottom: 10px;
-	}
-	
-	.titletext {
-		font: bold 14px Verdana, sans-serif;
-		margin: 0px;
-		text-align: left;
-		margin-bottom: 10px;
-	}
-	
-</style>
-<meta name="viewport" content="
-	width= device-width,
-	height= device-height,
-	user-scalable= no,
-	initial-scale= 0.9,
-	maximum-scale= 0.9,
-	minimum-scale= 0.9
-	shrink-to-fit= no">
+		#titlebox {
+			background-color: #60605f;
+			height: 145px;
+			width: 100%;
+			font-size: 30px;
+			padding-left: 150px;
+		}
+		
+		.linkbanner {
+			letter-spacing: .1em;
+			font: 8px Verdana;
+			text-transform: uppercase;
+			background-color: #40403f;
+			valign: center;
+			text-align: left;
+			padding-left: 20px;
+			height: 40px;
+			border-left: 0px solid white;
+			border-right: 0px solid white;
+			border-top: 10px solid white;
+			border-bottom: 10px solid white;
+		}
+		
+		.linkbanner a:link, .linkbanner a:visited, .linkbanner a:active {
+			color: #cfe2f3;
+			text-decoration: none;
+		}
+		
+		.linkbanner a:hover {
+			color: #666f6c;
+			text-decoration: none;
+		}
+		
+		.leftcolumn {
+			background-color: #60605f;
+			vertical-align: top;
+			text-align: justify;
+			width: 445px;
+			padding: 10px 30px;
+		}
+		
+		.rightcolumn {
+			background-color: #60605f;
+			vertical-align: top;
+			text-align: right;
+			width: 245px;
+			border-left: 30px solid white;
+			border-right: 0px solid white;
+			border-top: 0px solid white;
+			border-bottom: 0px solid white;
+			padding: 10px 30px;
+		}
+		
+		#maintable {
+			border-left: 30px solid white;
+			border-right: 30px solid white;
+			border-top: 10px solid white;
+			border-bottom: 30px solid white;
+			width: 785px;
+			height: 800px;
+			margin: 50px 10px;
+		}
+		
+		#leftscroller {
+			overflow-y: scroll;
+			width: 100%;
+			height: 540px;
+			padding: 0px;
+			padding-left: 30px;
+			position: relative;
+			right: 50px;
+
+		}
+		
+		.datetext {
+			font: normal bold 10px Verdana, sans-serif;
+			color: #a8a8a8;
+			text-transform: lowercase;
+			text-align: right;
+			margin: 0px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		
+		.titletext {
+			font: bold 14px Verdana, sans-serif;
+			margin: 0px;
+			text-align: left;
+			margin-bottom: 10px;
+		}
+		
+	</style>
 </head>
 
 <html>
@@ -182,7 +174,7 @@
 							at 5:24 am 0 comments
 							<br><br>
 						<!--- post end --->
-						
+						<!--- post begin --->
 							<div class="datetext">monday, february 23, 2015</div>
 							<div class="titletext"><a href="#">The Last of the Thumb Kids's Thumbs Up</a></div>
 							I find myself frequently mashing clumsily on the screen of my phone with my thumbs. Often the use of both will stifle progress, as the left thumb forgets the right thumb is leading and brisés when it should have pliéd. Get your shit together, thumbs, for I've many an important emoji to transmit and nary a moment to tarry your transit.
@@ -197,13 +189,13 @@
 							<br><br>
 							at 3:46 am 0 comments
 							<br><br>
-							Home
-
+						<!--- post end --->
 
 							<br><br>
 							FARTS...
-							</div></div>
-							</td>
+						</div>
+					</div>
+				</td>
 				<td class="rightcolumn">and <a href="#">butts</a>.</td>
 			<tr>
 		</table>
