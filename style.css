@@ -1,7 +1,12 @@
+:root {
+	--main-txt-color: #ffffff;
+}
+
 body {
 	font: 10px Verdana;
 	background-color: #c3ad80;
 	color: #ffffff;
+	color: var(--main-txt-color);
 }
 
 a:link, a:visited, a:active {
@@ -69,7 +74,6 @@ a:hover {
 	padding: 10px 30px;
 	border-top-right-radius: 20px;
 	margin-right: 10px;
-	spacing-right: 30px;
 }
 
 .rightcolumn {
@@ -84,7 +88,6 @@ a:hover {
 	border-bottom: 0px solid white;
 	padding: 10px 30px;
 	border-top-left-radius: 20px;
-	spacing: 10px;
 }
 
 #leftscroller {
@@ -114,3 +117,5 @@ a:hover {
 	text-align: left;
 	margin-bottom: 10px;
 }
+
+/* © 2022 Andrew Loy */
