@@ -25,12 +25,9 @@ a:hover {
 	height: 145px;
 	width: 100%;
 	font-size: 30px;
-	text-align: left;
 	padding-left: 150px;
-	/* position: fixed; */
 	transition: 0.4s;
 }
-
 
 #resizeheader {
   background-color: #f1f1f1; /* Grey background */
