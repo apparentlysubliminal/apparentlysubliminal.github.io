@@ -7,6 +7,7 @@
 	--light-blue: #cfe2f3;
 	--light-red: #f3e2cf;
 	--content-width: 85%;
+	--header-height: 245px;
 }
 
 * {
@@ -65,19 +66,21 @@ table, tr, td  {
 
 #header-wrapper {
 /*	width: 100%;*/
-	text-align: right;
+	text-align: center;
 	/*vertical-align: center;*/
 	position:  fixed;
+
 	top: 0px;
 	left: 0px;
 	z-index: 5; 
 }
 
 #header {
+	text-align: right;
 	top: 0px;
 /*	left:  0px;*/
 	background-color: var(--light-gray);
-	height: 245px;
+	height: var(--header-height);
 	max-width: var(--content-width);
 	font-size: 30px;
 	/*text-align: left;*/
@@ -91,7 +94,7 @@ table, tr, td  {
 /*	position: fixed; */
 	transition: 0.2s;
 	border: 30px solid white;
-	margin: 0 auto;
+	margin: 0 0px;
 	border-collapse: separate;
 	border-spacing: 10px;
 }
@@ -225,11 +228,15 @@ li:nth-of-type(odd):hover {
 }
 
 #nav-wrapper {
+	align: center;
   vertical-align: middle;
-	padding-top: 250px;
+	padding: 0px;
 /*	height: 40px;*/
-	width: 100%;
+	max-width: 100%;
+	max-width: var(--content-width);
 	/*position: inline;*/
+	border: 30px solid white !important;
+	margin-top: 15px;
 }
 
 table {
@@ -237,6 +244,7 @@ table {
 }
 
 #maintable {
+		background-color: yellowgreen;
 	border-left: 30px solid white;
 	border-right: 30px solid white;
 	border-top: 30px solid white;
@@ -245,7 +253,7 @@ table {
 	/*width: 785px;*/
 	width: var(--content-width);
 	/*height: 1600px;*/
-	margin: 200px 10px 200px;
+	margin: 175px 10px 10px;
 	background-color: #ffffff;
 	border-collapse: separate;
 	border-spacing: 0px;
@@ -283,10 +291,9 @@ table {
 	width: 100%;
 	/*height: 740px;*/
 	padding: 0px;
-	padding-left: 30px;
+/*	padding-left: 30px;*/
 	position: relative;
-	right: 50px;
-
+/*	right: 50px;*/
 }
 
 .title-wrapper {
@@ -376,6 +383,180 @@ table {
 	display: block;
 }
 
+
 /*
   © 2022 apparentlysubliminal.github.io
 */
+
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+	
+	body {
+		background-color: rebeccapurple;
+	}
+
+} /* end (max-width: 1200px) */
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+	body {
+		background-color: deeppink;
+	}
+
+} /* end (max-width: 1199px) */
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	
+	body {
+		background-color: royalblue;
+	}
+
+} /* end (max-width: 991px) */
+
+
+
+
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+
+:root{
+	--content-width: 85%;
+	--header-height: 165px;
+}
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+	
+	body {
+		background-color: yellow;
+	}
+
+#header-wrapper {
+  max-width: 100%;
+	text-align: right;
+	/*vertical-align: center;*/
+	position:  fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 5;
+	padding: 0px 0px;
+	text-align: center;
+	margin: 0px;
+}
+
+#header {
+	top: 0px;
+/*	left:  0px;*/
+	background-color: var(--light-gray);
+	height:  var(--header-height);
+/*	max-width: 100%;*/
+		max-width: var(--content-width);
+	font-size: 30px;
+	padding: 0px 0px 0px;
+	transition: 0.2s;
+	border: 30px solid white;
+	margin: 0px;
+	border-collapse: separate;
+	border-spacing: 0px;
+}
+
+#content-wrapper {
+	max-width: 100%;
+	max-width: var(--content-width);
+}
+
+#maintable { /* XS */
+	border-left: 30px solid white;
+	border-right: 30px solid white;
+	border-top: 30px solid white;
+	border-bottom: 30px solid white;
+	padding: 0px;
+	/*width: 785px;*/
+	width: auto;
+	/*height: 1600px;*/
+	margin: 175px 10px 200px;
+	background-color: #ffffff;
+	border-collapse: separate;
+	border-spacing: 0px;
+/*	position: relative;
+*/
+}
+
+.leftcolumn {
+	background-color: var(--light-gray);
+	vertical-align: top;
+	text-align: justify;
+	width: 100%;
+	padding: 0px 0px;
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px;	
+	margin-right: 10px;
+	margin-left: 10px;
+}
+#main-contents {
+	margin: 10px;
+	width: auto;
+  background-color: blue; 
+  max-width: 100%
+}
+
+} /* end (max-width: 767px) */
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+
+@media (max-width: 479px) {
+
+	body {
+		background-color: red;
+	}
+
+} /* end (max-width: 479px) */
+
+
+
+
+
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hidden-lg {
+    display: none !important;
+  }
+}
+
+                                                              /*/
+                                                             / /
+                                                            / /
+                                       ► © 2023 apparentlysubliminal.github.io ◄
+                                                          / /
+                                                         / /
+                                                        /*/
+	

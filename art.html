@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+	<meta name="viewport" content="width= device-width,	height= device-height, user-scalable= no, initial-scale= 0.9, maximum-scale= 0.9, minimum-scale= 0.9, shrink-to-fit= no">
+-->
+	<title>𝚊𝚙𝚙𝚊𝚛𝚎𝚗𝚝𝚕𝚢 𝚜𝚞𝚋𝚕𝚒𝚖𝚒𝚗𝚊𝚕 \\ a҉p҉p҉a҉r҉e҉n҉t҉l҉y҉ ҉s҉u҉b҉l҉i҉m҉i҉n҉a҉l҉ </title> <!-- This is intentionally poor SEO -->
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<script src="script.js"></script>
+	<meta name="author" content="Andrew Loy">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Beth+Ellen&family=Lora&family=Ms+Madi&family=Silkscreen:wght@400;700&family=Sue+Ellen+Francisco&family=Walter+Turncoat&display=swap" rel="stylesheet">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Beth+Ellen&family=Lora&family=Ms+Madi&family=Silkscreen:wght@400;700&family=Sue+Ellen+Francisco&family=Walter+Turncoat&display=swap'); 
+	</style>
+	<style type="text/css">
+		/* VARIABLES */
+		:root {
+			--accent-color: #37a3dc;
+			--accent-gray: #373731;
+			--tag-color: #404040;
+
+			--page-margin: 0.75vw;
+		}
+		
+		* {
+			margin: 0px;
+		}
+
+		body {
+			background-color: #fff;
+			margin: var(--page-margin);
+			color: var(--accent-color);
+		}
+
+		.pagewrapper {
+			background-color: #ffffff;
+			max-width: 100%;
+			max-height: 100%;
+		}
+		
+		hr {
+			border: 2px solid #676761;
+			border-radius: 0px;
+			margin: 0px 10px;
+		}
+		
+		hr.bak {
+/*			color: #676761;*/
+			border: 10px solid #676761;
+			border-radius: 10px;
+		}
+		
+		header {
+/*			background-color: #ffdddd;*/ /* DEBUG */
+			margin-top: 2em;
+		}
+
+		.fancy {
+			font-family: 'Ms Madi', cursive;
+			text-shadow: -.035em .035em #c0c0c0;
+			font-weight: bold;
+			letter-spacing: .02em;
+			line-height: .6em;
+/*			font-size: 7em;*/
+		font-size: 9vw;
+		}
+
+		.subtitle {
+			font-family: 'Lucida Sans', cursive;
+			color: #000000;
+			text-transform: uppercase;
+/*			letter-spacing: 1.1em;
+			line-height: 1.4em;
+			font-size: 2.2em;*/
+		letter-spacing: 1.1em;
+		line-height: 1.4em;
+		font-size: 2.2vw;
+
+		}
+
+		.page-wrapper {
+/*			background-color: #ffffdd;*/ /* DEBUG */
+			border: 1px dotted #000;
+			padding: 4px 40px;
+			margin: 0px auto;
+			max-width: 1000px;
+		}
+
+		.banner {
+			background-color: #37a3dc;
+			width: 100%;
+			padding: 2px 10px;
+			text-align: left;
+			color: #fff;
+			font-weight: bold;
+			margin: 10px 0px;
+			display: table; /* FLEXIBLE CENTER */
+			margin: 2px 0px;
+		}
+
+		.banner > * {
+			display: table-cell;
+			font-size: 1.2vw;
+			font-size: .8em;
+		}
+
+		.banner > .left {
+/*			background-color: yellow;*/ /* DELETE */
+/*			width: 2400px;*/
+			width: 70%;
+
+		}
+		.banner > .right {
+/*			background-color: blue;*/ /* DELETE */
+			width: 300px;
+			width: 16%;
+			text-align: right;
+		}
+
+		div.tricol {
+ 			column-count: 3;
+ 			column-fill: auto;
+ 			column-gap: 20px;
+
+		}
+
+		.page-header {
+			margin-top: 0px;
+			text-align: left;
+		}
+
+		.page-header > div {
+			margin: .6em .1em .2em;
+		}
+
+		.ph-headline {
+			font-size: 2.0em;
+/*			font-size: 3.4vw;*/
+			font-weight: bold;
+		}
+
+		.ph-tagline {
+			font-size: 1.6em;
+/*			font-size: 2.8vw;*/
+			font-weight: bold;
+			font-style: italic;
+		}
+
+
+		hr.ph {
+/*			color: #676761;*/
+			border: 1px solid var(--accent-gray);
+			border-radius: 0px;
+			margin: 2px 0px;
+		}
+
+		.serif {
+			font-family: 'Lora', serif;
+		}
+
+		.content-container {
+			margin-top: 1.2em;
+		}
+
+		.article {
+			text-align: justify;
+			text-align-last: start;
+			color: var(--accent-gray);
+		}
+
+		.article::first-letter {
+			font-size: 4.6em;
+			line-height: .8em;
+			vertical-align: top;
+			color: var(--accent-color);
+			font-family: 'Lora', serif;
+			float: left;
+				clear: auto;
+				margin: 0em .03em;
+		}
+
+		.inline-quote {
+			color: var(--accent-color);
+			text-align: center!important;
+			text-align-last: center!important;
+			font-size: 1.4em;
+			font-family: sans-serif;
+			font-weight: bold;
+			font-kerning: normal;
+			font-stretch: ultra-condensed;
+		}
+		.inline-quote + p {
+			text-indent: 0px;
+		}
+
+		.inline-hr {
+			border: 2px solid var(--accent-gray);
+			border-radius: 0px;
+			margin: .6em 0px;	
+		}
+
+		p {
+			text-indent: 1.6em;
+		}
+
+		.c-t-w-w {
+			width: 100%;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			background-color: rgba(155,155,255,0.0);
+		}
+		.c-t-w-w2 {
+			max-width: 1000px;
+			margin-left: auto;
+
+			margin-right: auto;
+			background-color: rgba(155,255,155,0.0);
+		}
+
+		.corner-tag-wrapper {
+			position: relative;
+			top: var(--page-margin);
+			left: 0px;
+/*			border: 0px dotted black;*/
+			background-color: transparent;
+			height: 300px;
+			width: 300px; 
+			overflow: hidden;
+			margin-left: 0px;
+			margin-right: auto;
+			background-color: rgba(255,155,155,0.0);
+		}
+
+		.corner-tag {
+
+
+			background-color: var(--tag-color);
+			position: relative;
+			top:-290px;
+			left:-255px;
+			height: 300px;
+			width: 400px;
+			color: #ffffff;
+			transform-origin: right;
+			transform: rotate(-45deg);
+
+		}
+
+		.ct-bottom {
+
+			margin-top: auto;
+			margin-bottom: 0px;
+/*			background-color: yellow;*/
+			position: absolute;
+			width: 100%;
+			bottom: 0px;
+			left: 0px;
+			letter-spacing: -.05em;
+			font-size: 1.6em;
+			font-family: sans-serif;
+			font-stretch: ultra-condensed;
+			padding: 4px;
+		}
+
+		.upper {
+			text-transform: uppercase;
+		}
+
+		.article-box{
+			border: 2px solid black;
+/*			background: rgba(155,155,255,0.4);*/
+			background-color: var(--accent-color);
+			color: #fff;
+			padding: .25em;
+			margin: .25em 0em;
+			-webkit-box-decoration-break: clone;
+  		-o-box-decoration-break: clone;
+  		box-decoration-break: clone;
+		}
+
+
+
+
+
+
+/*       ╔═══════════════════╗                              
+  ───────╢         L         ╟────────────────────────────   
+         ╚═══════════════════╝                              */
+
+@media (min-width: 1200px) {
+
+	body {
+		background-color: forestgreen;
+	}
+
+	.fancy {
+		letter-spacing: .02em;
+		line-height: .6em;
+		font-size: 7em;
+
+	}
+
+	.subtitle {
+		letter-spacing: 1.1em;
+		line-height: 1.4em;
+		font-size: 2.2em;
+	}
+
+	div.tricol {
+ 		column-count: 4;
+ 		column-fill: auto;
+ 		column-gap: 20px;
+	}
+
+} /* end (max-width: 1200px) */
+
+
+
+/*       ╔═══════════════════╗                              
+  ───────╢         M         ╟────────────────────────────   
+         ╚═══════════════════╝                              */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+	body {
+		background-color: deeppink;
+	}
+
+	.fancy {
+		letter-spacing: .02em;
+		line-height: .6em;
+		font-size: 10vw;
+
+	}
+	div.tricol {
+ 		column-count: 3;
+ 		column-fill: auto;
+ 		column-gap: 20px;
+	}
+	.c-t-w-w {
+
+	    min-margin-left: var(--page-margin);
+
+	}
+
+
+} /* end (max-width: 1199px) */
+
+
+/*       ╔═══════════════════╗                              
+  ───────╢         S         ╟────────────────────────────   
+         ╚═══════════════════╝                              */
+
+@media (min-width: 768px) and (max-width: 991px) {
+	
+	body {
+		background-color: royalblue;
+	}
+
+	.fancy {
+		letter-spacing: .02em;
+		line-height: .6em;
+		font-size: 12vw;
+
+	}
+
+	.c-t-w-w {
+	    margin-left: var(--page-margin);
+	}
+
+} /* end (max-width: 991px) */
+
+
+
+
+/*       ╔═══════════════════╗                              
+  ───────╢        XS         ╟────────────────────────────   
+         ╚═══════════════════╝                              */
+
+@media (max-width: 767px) {
+
+:root{
+	--content-width: 85%;
+	--header-height: 165px;
+}
+
+	body {
+		background-color: yellow;
+	}
+
+	.fancy {
+		letter-spacing: .02em;
+		line-height: .6em;
+		font-size: 13vw;
+
+	}
+
+	div.tricol {
+ 		column-count: 1;
+ 		column-fill: auto;
+ 		column-gap: 30px;
+	}
+
+		.c-t-w-w {
+			margin-left: var(--page-margin);
+		}
+
+		.corner-tag {
+
+
+			background-color: var(--tag-color);
+			position: relative;
+			top:-300px;
+			left: -225px;
+			height: 340px;
+			width: 340px;
+			width: 50vw;
+			color: #ffffff;
+			transform-origin: right;
+			transform: rotate(-45deg);
+
+		}
+
+	.ct-bottom {
+		font-size: 2.6vw;
+	}
+} /* end (max-width: 767px) */
+
+
+
+
+/*       ╔═══════════════════╗                              
+  ───────╢        XXS        ╟────────────────────────────   
+         ╚═══════════════════╝                              */
+
+@media (max-width: 479px) {
+
+	body {
+		background-color: red;
+	}
+		.corner-tag {
+
+
+			background-color: var(--tag-color);
+			position: relative;
+			top:-310px;
+			left: -245px;
+			height: 340px;
+			width: 340px;
+			width: 50vw;
+			color: #ffffff;
+			transform-origin: right;
+			transform: rotate(-45deg);
+
+		}
+
+	.ct-bottom {
+		font-size: 2.4vw;
+	}
+
+
+} /* end (max-width: 479px) */
+	</style>
+
+</head>
+
+<body>
+<center>
+
+
+<div class="page-wrapper">
+	<!-- MAIN HEADER -->
+	<header>
+		<span class="fancy">Art Bell</span>
+		<hr>
+		<span class="subtitle">After Dark</span>
+		<div class="banner">
+			<div class="left">A Publication of Chancellor Broadcasting Company and Talk Radio Network</div>
+			<div>&nbsp;</div>
+			<div class="right">August 1995</div>
+		</div>
+	</header>
+	<!--/MAIN HEADER -->
+	<!-- CORNER TAG -->
+<div class="c-t-w-w"><div class="c-t-w-w2">
+<div class="corner-tag-wrapper">
+<div class="corner-tag">
+	<div class="ct-bottom">
+		<span style="font-size: .8em;">In this Issue:</span><br><span class="upper"><strong>Abduction Syndrome</strong></span>
+	</div>
+</div>
+</div>
+</div></div>
+<!--/CORNER TAG -->
+	<!-- PAGE HEADER -->
+	<div class="page-header">
+		<div>
+			<span class="ph-headline serif">NEW YORK POST: </span>
+			<span class="ph-tagline serif">Bell tied with Liddy for number 2 radio talker</span>
+		</div>
+		<hr class="ph">
+	</div>
+	<!--/PAGE HEADER -->
+
+	<!-- THREE COLUMNS -->
+	<div class="content-container tricol"><div class="article serif">
+<!-- CONTENT -->
+<p style="text-indent: 0px;">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra mauris in aliquam sem. Quam quisque id diam vel. Luctus accumsan tortor posuere ac. Vitae turpis massa sed elementum tempus. Gravida neque convallis a cras semper. Magna sit amet purus gravida quis blandit turpis. Molestie ac feugiat sed lectus vestibulum mattis. Nisi vitae suscipit tellus mauris a diam maecenas. Vitae justo eget magna fermentum iaculis eu non diam phasellus. Elementum sagittis vitae et leo duis ut diam quam nulla. Sagittis eu volutpat odio facilisis mauris. Ut consequat semper viverra nam libero justo laoreet. Eget mauris pharetra et ultrices neque ornare aenean euismod. Dignissim suspendisse in est ante in nibh mauris cursus. Arcu felis bibendum ut tristique et egestas quis ipsum. Lobortis feugiat vivamus at augue eget arcu dictum. Mi ipsum faucibus vitae aliquet nec ullamcorper sit. Ullamcorper dignissim cras tincidunt lobortis feugiat.
+</p>
+
+<span class="inline-quote">
+<center>
+	<hr class="inline-hr">
+	&ldquo;Fermentum posuere urna nec tincidunt,&rdquo; Sit amet commodo nulla facilisi <i>nullam</i>.
+	<hr class="inline-hr">
+</center>
+</span>
+
+<p>
+Sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Turpis nunc eget lorem dolor sed viverra ipsum. Tincidunt vitae semper quis lectus nulla at volutpat. Auctor urna nunc id cursus metus aliquam eleifend mi in. Cursus turpis massa tincidunt dui. Accumsan sit amet nulla facilisi morbi tempus. Tempor id eu nisl nunc mi. Luctus accumsan tortor posuere ac ut. Netus et malesuada fames ac turpis egestas sed. Placerat in egestas erat imperdiet sed euismod nisi. In fermentum posuere urna nec tincidunt praesent. Pulvinar sapien et ligula ullamcorper malesuada. Eros in cursus turpis massa tincidunt dui ut ornare.
+</p>
+<p>
+Orci sagittis eu volutpat odio facilisis. Lacinia at quis risus sed vulputate odio ut enim. Elementum curabitur vitae nunc sed velit dignissim sodales. Enim nulla aliquet porttitor lacus. Nisl condimentum id venenatis a condimentum vitae. Id velit ut tortor pretium viverra suspendisse. Non enim praesent elementum facilisis leo. Nunc sed augue lacus viverra vitae congue eu consequat ac. Lacus sed turpis tincidunt id aliquet risus. Dignissim diam quis enim lobortis scelerisque fermentum. Fames ac turpis egestas maecenas pharetra convallis posuere morbi leo. Lacus laoreet non curabitur gravida arcu ac tortor dignissim. Et molestie ac feugiat sed. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Fermentum leo vel orci porta non pulvinar neque laoreet suspendisse. Eget gravida cum sociis natoque penatibus et magnis dis. Faucibus a pellentesque sit amet porttitor. Sed blandit libero volutpat sed cras ornare arcu.
+</p>
+<p>
+Scelerisque in dictum non consectetur a erat nam at. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc. At imperdiet dui accumsan sit amet nulla facilisi morbi. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Ornare suspendisse sed nisi lacus sed. Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec. In iaculis nunc sed augue. Auctor elit sed vulputate mi sit amet. Massa tempor nec feugiat nisl pretium fusce. Nisl tincidunt eget nullam non nisi est sit amet. Proin fermentum leo vel orci porta non pulvinar neque laoreet. Nunc sed augue lacus viverra vitae congue eu consequat ac. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan. In nisl nisi scelerisque eu ultrices vitae auctor eu. Gravida arcu ac tortor dignissim convallis aenean. Vestibulum rhoncus est pellentesque elit ullamcorper. Scelerisque purus semper eget duis at tellus at.
+</p>
+<p>
+Interdum velit euismod in pellentesque massa placerat duis. Sit amet consectetur adipiscing elit pellentesque. Amet porttitor eget dolor morbi non arcu risus quis. Urna neque viverra justo nec ultrices dui. Condimentum lacinia quis vel eros donec ac odio. Etiam dignissim diam quis enim lobortis scelerisque fermentum. Lacus suspendisse faucibus interdum posuere lorem ipsum. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Sit amet facilisis magna etiam tempor orci eu lobortis. Augue neque gravida in fermentum et sollicitudin ac orci. Sit amet purus gravida quis blandit turpis cursus. Pharetra diam sit amet nisl suscipit.
+</p>
+<p>
+Facilisis leo vel fringilla est ullamcorper. Neque vitae tempus quam pellentesque nec nam aliquam sem et. Dolor sit amet consectetur adipiscing elit pellentesque habitant. Leo integer malesuada nunc vel risus commodo. Cras fermentum odio eu feugiat pretium nibh. Diam sit amet nisl suscipit adipiscing bibendum est. Vestibulum morbi blandit cursus risus at. Adipiscing bibendum est ultricies integer quis. Adipiscing tristique risus nec feugiat. Amet purus gravida quis blandit turpis. Tortor id aliquet lectus proin nibh nisl condimentum id venenatis. Amet nulla facilisi morbi tempus iaculis urna id volutpat lacus. Tristique magna sit amet purus. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris. Sed sed risus pretium quam vulputate dignissim suspendisse in. Proin libero nunc consequat interdum varius. Aenean euismod elementum nisi quis eleifend quam. Venenatis cras sed felis eget velit aliquet sagittis. Nec nam aliquam sem et. Risus viverra adipiscing at in tellus.
+</p>
+<p>
+Pretium vulputate sapien nec sagittis aliquam malesuada. Fusce id velit ut tortor pretium viverra suspendisse potenti. Orci porta non pulvinar neque laoreet suspendisse interdum consectetur libero. Diam vel quam elementum pulvinar etiam non quam lacus. Nibh tellus molestie nunc non blandit massa enim nec dui. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Quis commodo odio aenean sed adipiscing diam donec adipiscing. Cursus mattis molestie a iaculis at erat. Quis vel eros donec ac odio. Eget mi proin sed libero enim sed faucibus. Lacus laoreet non curabitur gravida arcu ac tortor dignissim convallis. Eget nunc lobortis mattis aliquam faucibus purus in massa. Sit amet est placerat in egestas erat imperdiet. Diam ut venenatis tellus in. Auctor urna nunc id cursus metus aliquam eleifend mi in.
+</p>
+
+<p>
+Adipiscing commodo elit at imperdiet dui accumsan sit. Eget lorem dolor sed viverra ipsum. Laoreet suspendisse interdum consectetur libero. Quam pellentesque nec nam aliquam sem et tortor. Tincidunt nunc pulvinar sapien et. Volutpat lacus laoreet non curabitur gravida arcu ac tortor. Diam ut venenatis tellus in. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Diam maecenas sed enim ut sem viverra aliquet eget. Arcu odio ut sem nulla pharetra diam sit. Maecenas pharetra convallis posuere morbi leo urna molestie. Fusce ut placerat orci nulla pellentesque dignissim. In metus vulputate eu scelerisque felis imperdiet proin. Egestas sed tempus urna et pharetra pharetra massa massa ultricies. Adipiscing commodo elit at imperdiet. In fermentum posuere urna nec. Sed arcu non odio euismod lacinia at. Ullamcorper velit sed ullamcorper morbi.
+</p>
+<p>
+Aenean vel elit scelerisque mauris pellentesque pulvinar. Vel pharetra vel turpis nunc eget lorem dolor sed. Sed viverra tellus in hac habitasse platea dictumst vestibulum. Neque viverra justo nec ultrices dui sapien eget. Duis tristique sollicitudin nibh sit amet commodo. Varius duis at consectetur lorem donec massa sapien. Mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Massa tincidunt dui ut ornare lectus sit amet est. Netus et malesuada fames ac turpis egestas maecenas pharetra convallis. Posuere urna nec tincidunt praesent. Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor. Lorem ipsum dolor sit amet consectetur. Habitant morbi tristique senectus et. Facilisis gravida neque convallis a cras semper auctor neque vitae. Neque vitae tempus quam pellentesque nec. Ullamcorper malesuada proin libero nunc consequat interdum varius sit amet. Condimentum vitae sapien pellentesque habitant morbi tristique. Dictum sit amet justo donec enim diam. Dolor sit amet consectetur adipiscing elit pellentesque.
+</p>
+<p>
+Egestas sed tempus urna et pharetra pharetra massa massa. Platea dictumst quisque sagittis purus sit amet volutpat. Diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus. Feugiat pretium nibh ipsum consequat. Consequat ac felis donec et odio pellentesque diam volutpat. Risus quis varius quam quisque. Condimentum id venenatis a condimentum vitae sapien. Et ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Id donec ultrices tincidunt arcu non sodales neque.
+</p>
+
+<p>
+Suspendisse ultrices gravida dictum fusce ut placerat orci. Vitae nunc sed velit dignissim sodales ut eu sem. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Sed faucibus turpis in eu mi bibendum neque egestas. Neque sodales ut etiam sit. Lacinia quis vel eros donec ac odio tempor. Urna nec tincidunt praesent semper. Sodales neque sodales ut etiam sit amet nisl purus. Eu augue ut lectus arcu bibendum at. Sit amet risus nullam eget felis eget nunc. Sit amet justo donec enim diam vulputate. Eget duis at tellus at urna condimentum mattis pellentesque id.
+</p>
+<p>
+Rhoncus dolor purus non enim praesent elementum facilisis. Purus in mollis nunc sed. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Convallis tellus id interdum velit laoreet id donec ultrices. Eu feugiat pretium nibh ipsum consequat nisl. Scelerisque viverra mauris in aliquam. A iaculis at erat pellentesque adipiscing commodo elit at imperdiet. Sed vulputate odio ut enim blandit volutpat maecenas volutpat blandit. A diam sollicitudin tempor id eu nisl. Nulla facilisi etiam dignissim diam. Non sodales neque sodales ut. Quis commodo odio aenean sed. At consectetur lorem donec massa. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus. Mauris cursus mattis molestie a iaculis at erat. Quis imperdiet massa tincidunt nunc. Fames ac turpis egestas integer. Morbi enim nunc faucibus a pellentesque sit amet.
+</p>
+<p>
+Mauris ultrices eros in cursus. Dolor sit amet consectetur adipiscing. Scelerisque in dictum non consectetur a. Mattis enim ut tellus elementum sagittis. Pharetra sit amet aliquam id diam maecenas. Diam sollicitudin tempor id eu nisl nunc mi. Viverra maecenas accumsan lacus vel facilisis volutpat est velit egestas. Ipsum dolor sit amet consectetur adipiscing elit. Non tellus orci ac auctor augue mauris augue neque. Tellus elementum sagittis vitae et. Mi bibendum neque egestas congue quisque.
+</p>
+
+
+
+<p>
+Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan sit. Tincidunt vitae semper quis lectus. Velit euismod in pellentesque massa placerat duis ultricies lacus. Etiam erat velit scelerisque in dictum non consectetur. Lacus viverra vitae congue eu. Erat imperdiet sed euismod nisi porta lorem mollis aliquam ut. Vestibulum rhoncus est pellentesque elit. Commodo ullamcorper a lacus vestibulum sed. Sodales neque sodales ut etiam sit. Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Pellentesque adipiscing commodo elit at imperdiet. Fusce id velit ut tortor pretium viverra suspendisse. Nunc sed augue lacus viverra vitae congue eu. Lectus nulla at volutpat diam ut. Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Lorem mollis aliquam ut porttitor leo. Pellentesque habitant morbi tristique senectus et netus. Amet consectetur adipiscing elit ut aliquam purus sit amet luctus. Ultrices tincidunt arcu non sodales neque.
+</p>
+
+<div class="article-box">Lacus vestibulum sed arcu non odio euismod lacinia at quis. Nulla at volutpat diam ut venenatis tellus in metus vulputate. Quam lacus suspendisse faucibus interdum. In hac habitasse platea dictumst quisque sagittis purus sit. Ut faucibus pulvinar elementum integer enim neque volutpat. Eu non diam phasellus vestibulum.</div>
+
+<p>
+Enim eu turpis egestas pretium aenean pharetra magna ac placerat. Lorem ipsum dolor sit amet consectetur adipiscing elit. Dui id ornare arcu odio ut sem nulla pharetra diam. Facilisis sed odio morbi quis commodo odio aenean sed adipiscing. Vestibulum lorem sed risus ultricies tristique. Morbi tincidunt augue interdum velit euismod. Eget aliquet nibh praesent tristique magna sit amet purus gravida. Nisi est sit amet facilisis magna etiam tempor orci. Tempus quam pellentesque nec nam. Sit amet facilisis magna etiam tempor orci. Mattis aliquam faucibus purus in massa tempor nec. Quisque sagittis purus sit amet volutpat consequat mauris nunc. Faucibus purus in massa tempor nec feugiat nisl pretium fusce.
+</p>
+<p>
+Ornare massa eget egestas purus viverra accumsan. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel. Quisque sagittis purus sit amet. Elementum pulvinar etiam non quam. Proin sed libero enim sed faucibus turpis in eu. Sagittis aliquam malesuada bibendum arcu vitae elementum. Sed viverra ipsum nunc aliquet bibendum. Volutpat lacus laoreet non curabitur. Et tortor consequat id porta nibh venenatis cras sed. Faucibus purus in massa tempor nec feugiat. Tristique risus nec feugiat in fermentum posuere. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Pellentesque habitant morbi tristique senectus et netus et. Hendrerit dolor magna eget est lorem ipsum dolor sit. Cursus eget nunc scelerisque viverra mauris in aliquam. Diam vulputate ut pharetra sit amet. Sed adipiscing diam donec adipiscing tristique risus nec.
+</p>
+<p>
+At risus viverra adipiscing at in tellus integer. Quisque egestas diam in arcu cursus euismod. Eget dolor morbi non arcu. Massa ultricies mi quis hendrerit dolor magna. Viverra mauris in aliquam sem fringilla ut. Sollicitudin tempor id eu nisl nunc mi. Sodales neque sodales ut etiam sit amet. Sit amet cursus sit amet. Ullamcorper malesuada proin libero nunc consequat. Adipiscing diam donec adipiscing tristique risus nec feugiat in.
+</p>
+<p>
+Odio ut enim blandit volutpat maecenas. Euismod elementum nisi quis eleifend quam. Est ultricies integer quis auctor elit sed vulputate mi sit. Ullamcorper malesuada proin libero nunc consequat interdum varius sit amet. Volutpat diam ut venenatis tellus in metus vulputate eu. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Laoreet id donec ultrices tincidunt arcu. Id velit ut tortor pretium viverra suspendisse. Lectus nulla at volutpat diam ut venenatis tellus in. Posuere ac ut consequat semper viverra nam libero. Sit amet consectetur adipiscing elit ut aliquam purus. Quam quisque id diam vel quam elementum pulvinar etiam non. Faucibus in ornare quam viverra orci sagittis eu volutpat. Ornare arcu dui vivamus arcu.
+</p>
+<p>
+Sem fringilla ut morbi tincidunt augue interdum velit euismod in. Sit amet mauris commodo quis imperdiet massa tincidunt nunc. Sed nisi lacus sed viverra tellus in. Vitae et leo duis ut. Amet nisl purus in mollis nunc sed. Non nisi est sit amet facilisis magna etiam. Turpis tincidunt id aliquet risus feugiat in ante metus dictum. In nulla posuere sollicitudin aliquam ultrices. Sodales ut etiam sit amet nisl purus in mollis nunc. Augue neque gravida in fermentum. Non nisi est sit amet facilisis magna etiam. Egestas quis ipsum suspendisse ultrices gravida. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed. Posuere morbi leo urna molestie at elementum eu facilisis sed. Laoreet id donec ultrices tincidunt arcu non sodales neque sodales. Sapien nec sagittis aliquam malesuada. Consequat nisl vel pretium lectus quam id leo in vitae. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit.
+</p>
+<p>
+Augue lacus viverra vitae congue eu consequat. Faucibus scelerisque eleifend donec pretium vulputate sapien. Turpis tincidunt id aliquet risus feugiat in ante metus. Est sit amet facilisis magna etiam tempor. Massa tincidunt dui ut ornare. Fermentum posuere urna nec tincidunt. Sit amet commodo nulla facilisi nullam. Cras ornare arcu dui vivamus arcu felis bibendum ut. Bibendum est ultricies integer quis auctor elit sed vulputate mi. Nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. Arcu bibendum at varius vel pharetra.&nbsp;&#11035;
+</p>
+
+</div>
+<!--/CONTENT -->
+
+	</div>	
+	<!-- THREE COLUMNS -->
+
+
+
+
+</div>
+	
+</center>
+</body>
+
+</html>
+
+
+                                                            <!-- >
+                                                           <    >
+                                                          <    >
+                                         © 2023 apparentlysubliminal.github.io
+                                                        <    >
+                                                       <    >
+                                                      <! -->
+<!--- --- ---- --- ---< 
+>! █ █▄█ ▀▄█▄▀ █▄▀ █▄ <
+>! █▄▀▀▄▀█▄ █▄▄██▄█▄▄ <
+>! ███ ▄██▄ █▀ ▀▀▄█▄▄ <
+>! █ ▀█▄▀█  ▄▄▄█▄▀█ ▄ <
+>! █▀ ▄█ █▄▀ ▄▀██▄▀▄▄ <
+>! █ ▀█   ▄▄ █ █▀▄█▄▄ < 
+>! █▀█▀▀▀▀ █▄█▀██▄█▄▄ <
+>! █ ▄▀  █ ██▀█ ██▀▀▄ <
+>! █▄██▄▄▄█▄▄██▄█▄▄█▄ <
+>!      © 2023        <
+>!    apparently      <
+>!    subliminal      <
+>!--- --- ---- --- --->
+
+
+
+ 

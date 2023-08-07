@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>my big gridding adventure!!!!11one</title>
+	<style type="text/css">
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+
+}
+
+body {
+  text-align: center;
+}
+
+.grid {
+		height: 100%;
+		background-color: rgba(55, 55, 155, 1.0);
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-template-rows: 100px auto /* auto */ 100px;
+  grid-gap: 1em;
+  grid-template-areas: "header header header"
+                       "sidebar-1 article sidebar-2"
+                       /* "sidebar-1 article sidebar-2" */
+                       "footer footer footer";
+}
+
+header,
+aside,
+article,
+footer {
+  background: #ccc;
+  padding: 1em;
+}
+
+header {
+  grid-area: header;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.sidebar-left {
+  grid-area: sidebar-1;
+}
+
+.sidebar-right {
+  grid-area: sidebar-2;
+}
+
+	</style>
+</head>
+<body>
+
+	<div class="grid">
+		<header>
+		Header
+		</header>
+
+		<aside class="sidebar-left">
+		Left Sidebar
+		</aside>
+
+		<article>
+		Article
+		</article>
+		<!--
+		<article>
+		Article II
+		</article>
+		-->
+		<aside class="sidebar-right">
+		Right Sidebar
+		</aside>
+
+		<footer>
+		Footer
+		</footer>
+	</div>
+
+
+
+
+</body>
+</html>

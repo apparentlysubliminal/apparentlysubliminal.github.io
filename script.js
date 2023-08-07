@@ -21,7 +21,7 @@ function scrollFunction() {
 
     document.getElementById("header").style.fontSize = "30px";
     document.getElementsByTagName("h1")[0].style.fontSize = "30px";
-    document.getElementById("header").style.height = "245px";
+    document.getElementById("header").style.height = "var(--header-height)";
     document.getElementById("header").style.textAlign = "right"; // redundant if not altered between conditions
     // document.getElementById("header").style.paddingLeft = "150px";
     // document.getElementById("header").style.display = "flex";   

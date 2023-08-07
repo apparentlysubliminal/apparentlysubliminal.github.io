@@ -1,0 +1,381 @@
+:root {
+	--main-txt-color: #ffffff;
+	--light-gray: #60605f;
+	--hover-gray: #666f6c;
+	--dark-gray: #40403f;
+	--tan: #c3ad80;
+	--light-blue: #cfe2f3;
+	--light-red: #f3e2cf;
+	--content-width: 85%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+	font-size: 1em;
+}
+
+body {
+	background-color: var(--tan);
+	font: 16px Verdana;
+	color: var(--main-txt-color);
+}
+
+a:link, a:visited, a:active {
+	color: var(--dark-gray);
+	text-decoration: underline;
+	text-decoration-style: dotted;
+}
+
+a:hover {
+	color: var(--light-blue);
+	text-decoration: underline;
+	text-decoration-style: dotted;
+}
+
+.fancy-half {
+/*	display: inline-block;
+	margin: 0;
+	line-height: 1em;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 200px;	*/
+	font-size: 2em;
+	background: linear-gradient(to bottom, var(--light-red) 60%, var(--tan) 40%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+}
+
+.wrapper {
+	width: 100%;
+}
+
+
+table, tr, td  {
+	padding: 0px;
+	margin: 0px;
+	/*border: 50px solid red;*/
+}
+
+#header-wrapper {
+/*	width: 100%;*/
+	text-align: right;
+	/*vertical-align: center;*/
+	position:  fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 5; 
+}
+
+#header {
+	top: 0px;
+/*	left:  0px;*/
+	background-color: var(--light-gray);
+	height: 245px;
+	max-width: var(--content-width);
+	font-size: 30px;
+	/*text-align: left;*/
+	/*vertical-align: bottom;*/ /* what's up with this? */
+	padding: 10px 10px 0px;
+/*
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 10px;*/
+/*	position: fixed; */
+	transition: 0.2s;
+	border: 30px solid white;
+	margin: 0 auto;
+	border-collapse: separate;
+	border-spacing: 10px;
+}
+
+
+h1 {
+	font-size: 30px;
+}
+
+
+/*
+ul {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	display: grid;
+	grid-template-columns: repeat(7, 1fr); 
+	list-style-type: none;
+
+	text-align: center;
+	column-gap: 0px;
+	row-gap: 0px;
+}
+li {
+	text-align: center;
+}
+*/
+
+/* TESTING */
+
+ul {
+    /* Use flex boxes to align li items */
+    display: flex;
+    justify-content: space-around;
+    /* Remove default padding from major browsers */
+    padding: .5em 0px .25em 0px;
+    /* Hide the default decorations for li items */
+    list-style: none;
+    box-sizing: border-box;    
+    height: 100%;
+}
+
+ul > li {
+    /* Display the elements in one line */
+    display: inline-block;
+    vertical-align: middle;
+    /*border-left:  1px solid white;*/
+    height: 100%;
+
+}
+
+li:nth-of-type(even) {
+	border-bottom: .1em solid white;
+	/*border-top: 2px solid white;*/
+	/*padding-left: 30px;*/
+	padding:  0px .2em;
+	line-height: 1em;
+}
+li:nth-of-type(even):hover {
+	border-bottom: 0px solid white;
+	/*border-top: 2px solid white;*/
+	/*padding-left: 30px;*/
+	padding:  0px .2em;
+	line-height: 1em;
+}
+
+
+li:nth-of-type(odd):hover {
+	font-size: 1em;
+	line-height: 1em;
+
+}
+
+/* /TESTING */
+
+.link-banner {
+	margin: 0px;
+	background-color: var(--dark-gray);
+	font: bold 16px Verdana;
+	font-size: 1vw;
+	line-height: 1em;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	vertical-align: middle;
+	text-align: left;
+	padding: 0px;
+	border-left: 0px solid white;
+	border-right: 0px solid white;
+	border-top: 0px solid white;
+	border-bottom: 0px solid white;
+	/*padding: 10px 20px 0px;*/
+	/*padding-left: 20px;*/
+	/*height: 20px;*/
+}
+
+.link-banner a:link,
+.link-banner a:visited,
+.link-banner a:active	{
+	color: var(--light-blue);
+	text-decoration: none;
+	display: inline-block;
+	margin: 0;
+	line-height: 1em;
+	/*font-family: Helvetica, Arial, sans-serif;*/
+	font-weight: bold;
+	/*font-size: 200px;	*/
+	background: linear-gradient(to bottom, var(--dark-gray) 50%, var(--light-blue) 50%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.link-banner a:hover {
+	color: var(--hover-gray);
+	text-decoration: none;
+	display: inline-block;
+	margin: 0px;
+	line-height: 1em;
+	/*font-family: Helvetica, Arial, sans-serif;*/
+	font-weight: bold;
+	/*font-size: 200px;	*/
+	background: linear-gradient(to bottom, var(--light-red) 50%, var(--light-blue) 50%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#content-wrapper {
+	width: 100%;
+	position: relative;
+}
+
+#nav-wrapper {
+  vertical-align: middle;
+	padding-top: 250px;
+/*	height: 40px;*/
+	width: 100%;
+	/*position: inline;*/
+}
+
+table {
+	vertical-align: middle;
+}
+
+#maintable {
+	border-left: 30px solid white;
+	border-right: 30px solid white;
+	border-top: 30px solid white;
+	border-bottom: 30px solid white;
+	padding: 0px;
+	/*width: 785px;*/
+	width: var(--content-width);
+	/*height: 1600px;*/
+	margin: 200px 10px 200px;
+	background-color: #ffffff;
+	border-collapse: separate;
+	border-spacing: 0px;
+/*	position: relative;
+*/	top: 120px;
+}
+
+.leftcolumn {
+	background-color: var(--light-gray);
+	vertical-align: top;
+	text-align: justify;
+	width: auto;
+	padding: 10px 30px;
+	border-top-right-radius: 20px;
+	margin-right: 10px;
+}
+
+.rightcolumn {
+	background-color: var(--light-gray);
+	vertical-align: top;
+	text-align: right;
+	width: 30%;
+	margin-left: 10px;
+	border-left: 0px solid white;
+	border-right: 0px solid white;
+	border-top: 0px solid white;
+	border-bottom: 0px solid white;
+	padding: 10px 30px;
+	border-top-left-radius: 20px;
+}
+
+#leftscroller {
+	/*overflow-y: scroll;*/
+	overflow-y: show;
+	width: 100%;
+	/*height: 740px;*/
+	padding: 0px;
+	padding-left: 30px;
+	position: relative;
+	right: 50px;
+
+}
+
+.title-wrapper {
+/*	background-color: red;*/
+	width: 100%;
+	display:  table;
+	border-spacing: 0px;
+	padding-bottom: 10px;
+/*	border-bottom: 10px dotted white;*/
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: 10px 0px;
+/*	border-top: 10px dashed white;*/
+}
+
+.titletext {
+	z-index: 3;
+	position: relative;
+	font: bold 20px Verdana, sans-serif;
+	margin: 0px;
+	text-align: left;
+	margin-bottom: 10px;
+	/*
+	 testing below
+	*/
+	/*background-color: blue;*/
+	display: table-cell;
+	text-align: left;
+}
+
+.datetext {
+	font: normal bold 10px Verdana, sans-serif;
+	color: #a8a8a8;
+	text-transform: lowercase;
+	text-align: right;
+	vertical-align: center;
+	margin: 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	/*bottom: -30px;*/
+	position: relative;
+	z-index: 2;
+	/*
+	 testing below
+	*/
+	display: table-cell;
+	/*background-color: white;*/
+	text-align: right;
+	margin-left: auto;
+}
+
+#footer-wrapper {
+ width: 100%;
+/* background: #fff;*/
+ margin: 0px;
+ padding: 0px;
+ border: 0px solid white;
+ left: 0px;
+ right: 10px;
+ position: relative;
+
+}
+
+#footer {
+	width: 100%;
+	max-width: 100%;
+	height: 60px;
+	background-color: var(--tan);
+	z-index: 4;
+	position: relative; 
+	text-align: center;
+	bottom: 0px;
+	left: 0px;
+	padding: 0px;
+	margin: 0px;
+	border-top: 30px solid var(--tan);
+	height: 60px;
+	display: block;
+}
+
+#footer:hover {
+	width: 100%;
+	max-width: 100%;
+	height: 60px;
+	background: var(--light-gray);
+	border-top: 30px solid white;
+	display: block;
+}
+
+/*
+  © 2022 apparentlysubliminal.github.io
+*/

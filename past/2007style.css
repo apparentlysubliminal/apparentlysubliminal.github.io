@@ -1,0 +1,138 @@
+:root {
+	--main-txt-color: #ffffff;
+}
+
+body {
+	font: 10px Verdana;
+	background-color: #c3ad80;
+	color: #ffffff;
+	color: var(--main-txt-color);
+}
+
+a:link, a:visited, a:active {
+	color: #242526;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #cfe2f3;
+	text-decoration: none;
+}
+
+
+#titlebox {
+	background-color: #60605f;
+	height: 145px;
+	width: 100%;
+	font-size: 30px;
+	padding-left: 150px;
+	transition: 0.4s;
+}
+
+#resizeheader {
+  background-color: #f1f1f1; /* Grey background */
+  padding: 50px 10px; /* Some padding */
+  color: black;
+  text-align: center; /* Centered text */
+  font-size: 90px; /* Big font size */
+  font-weight: bold;
+  position: fixed; /* Fixed position - sit on top of the page */
+  top: 0;
+  width: 100%; /* Full width */
+  transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+}
+
+.linkbanner {
+	letter-spacing: .1em;
+	font: 8px Verdana;
+	text-transform: uppercase;
+	background-color: #40403f;
+	vertical-align: center;
+	text-align: left;
+	padding-left: 20px;
+	height: 40px;
+	border-left: 0px solid white;
+	border-right: 0px solid white;
+	border-top: 0px solid white;
+	border-bottom: 0px solid white;
+}
+
+.linkbanner a:link, .linkbanner a:visited, .linkbanner a:active {
+	color: #cfe2f3;
+	text-decoration: none;
+}
+
+.linkbanner a:hover {
+	color: #666f6c;
+	text-decoration: none;
+}
+
+#maintable {
+	border-left: 30px solid white;
+	border-right: 30px solid white;
+	border-top: 10px solid white;
+	border-bottom: 30px solid white;
+	width: 785px;
+	height: 800px;
+	margin: 50px 10px;
+	background-color: #ffffff;
+	border-collapse: separate;
+	border-spacing: 10px;
+}
+
+.leftcolumn {
+	background-color: #60605f;
+	vertical-align: top;
+	text-align: justify;
+	width: 445px;
+	padding: 10px 30px;
+	border-top-right-radius: 20px;
+	margin-right: 10px;
+}
+
+.rightcolumn {
+	background-color: #60605f;
+	vertical-align: top;
+	text-align: right;
+	width: 215px;
+	margin-left: 10px;
+	border-left: 0px solid white;
+	border-right: 0px solid white;
+	border-top: 0px solid white;
+	border-bottom: 0px solid white;
+	padding: 10px 30px;
+	border-top-left-radius: 20px;
+}
+
+#leftscroller {
+	overflow-y: scroll;
+	width: 100%;
+	height: 540px;
+	padding: 0px;
+	padding-left: 30px;
+	position: relative;
+	right: 50px;
+
+}
+
+.datetext {
+	font: normal bold 10px Verdana, sans-serif;
+	color: #a8a8a8;
+	text-transform: lowercase;
+	text-align: right;
+	margin: 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.titletext {
+	font: bold 14px Verdana, sans-serif;
+	margin: 0px;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+/*
+  © 2022 Andrew Loy
+  apparentlysubliminal.github.io
+*/
