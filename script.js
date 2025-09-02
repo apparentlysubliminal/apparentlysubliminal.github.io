@@ -44,7 +44,7 @@ function scrollFunctionBACKUP() {
 */
 
 function showContact() {
-  document.getElementById("main-contents").innerHTML = "dupeyloops<br><i>email@domain.com</i>";
+  document.getElementById("main-contents").innerHTML = "email:<br> c o n t a c t @drewloy.com</i>";
 }
 
 

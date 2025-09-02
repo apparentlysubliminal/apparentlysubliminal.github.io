@@ -1,516 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+
+
+<!-- a̶͕̞̰̞͉̗͆ͨͮ̎̓ͯpͤ̑ͬ҉̢̖̠͓̤̱͚p̗͊̓̇̏͝a̡̨̠̙̭͒͆ͨ́r̡̧͇̺̱̳̤̤͒͆̐͛̂̀̐͛́e̡̠̰͓͙̩̿̈ͭͅn̵͒ͯͭ̓̑͠͏̬̙͚͎͈͚͚̼̣t̜̻ͤ̿ͬ͑l̷̷̯̦̪͉̱͎̦ͨͥ̉y̝͂̈͑ͤͨ͘͟ ̵̞͙̄͌̆͑ͣ͠s̟̤̫̱̆ͧ̃͜ủ̶̖͓̫̞͆ͥ̏̑̕͞ḇ̸̠̣̜̚l̸͚ͦ̒͒ͮ͛͐i̙̭̘̬ͪ̾ͤ̽̒͌͢͝m̶̧̰̠͆̑ͮͨ̿ȉ̛̖̞̣͓̓ͨ͛nͥ̓ͭ͋ͣͤͅã̭̙͔̳̹̮͟lͫ̏̏͏̹̲̤̱ -->
+
+
+<html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>TEMPLATE</title>
-	<style type="text/css">
-
-/*╔═══╗
-  ║ * ║ ╟────────────────────────────────
-  ╚═══╝*/
-
-  :root {
-				--page-border-color: green;
-				--header-height: 245px;
-				
-				--main-txt-color: #ffffff;
-				--light-gray: #60605f;
-				--hover-gray: #666f6c;
-				--dark-gray: #40403f;
-				--tan: #c3ad80;
-				--light-blue: #cfe2f3;
-				--light-red: #f3e2cf;
-				--content-width: 85%;
-				--header-height: 245px;
-
-				
-	  }
-
-	::selection {
-			  color: whitesmoke;
-  			background: black;
-		}
-
-		* {
-				border-spacing: 0px;
-				margin: 0px;
-				padding: 0px;
-				box-sizing: border-box;
-				border-collapse: separate;
-/*			background-clip: border-box;*/
-		}
-
-		body {
-				background-color: black;
-				overflow: scroll;
-		}
-
-/*─╢ HEIGHT ╟──────────────────────────*/
-
-		.fullheight {
-				box-sizing: content-box;
-				height: 100%;
-		}
-
-/*─╢ WIDTH ╟───────────────────────────*/
-
-		.fullwidth {
-				box-sizing: content-box;
-				width: 100%;
-		}
-		.fullmaxwidth {
-				box-sizing: content-box;
-				max-width: 100%;
-		}
-
-
-/*─╢ TABLE ╟───────────────────────────*/
-
-		div.table {
-				height: 100%;
-				width: 100%;
-				border: 20px solid var(--page-border-color);
-				/*background-color: rgba(255, 255, 255, 0.75); */
-				background-color: var(--light-gray);
-				position: absolute;
-				box-sizing: border-box;
-				display: table;
-		}
-
-		div.row {
-/*			height: 100%;*/
-				width: 100%;
-				background-color: rgba(155, 155, 255, 0.0);
-				background-color: var(--light-gray);
-/*			position: absolute;*/
-				display: table-row;
-		}
-		div.toprow {
-				clear: both;
-		}
-		div.bottomrow{
-				clear: both;
-		}
-
-/*─╢ NAVIGATION ╟──────────────────────*/
-
-		div.leftcol {
-				width: 30%; /* max-width: 378px; *//* min-width: 174px; */
-				float: left;
-		}
-
-		.navbutton {
-			  margin-top: 5px; /* background-color: rgba(255, 255, 255, 1.0); */
-			  max-width: 25vw;
-		}
-
-		.shadowblurbox {
-			  border: 1px dotted black;
-			  padding: 10px; /* width: 20%; */
-				background-color: rgba(255, 255, 255, 1.0);
-			  box-shadow: 0px 0px 0px #888888;
-		}
-
-		.shadowblurbox:hover {
-			  border: 1px solid black; /* width: 20%; */
-				background-color: rgba(255, 255, 255, 0.9);
-			  box-shadow: 0px 0px 10px #888888;
-		}
-
-
-		.bgimg {
-				background-image: url('backgroundtile.png');
-				background-position: center;
-				background-repeat: repeat-y;
-				background-color: var(--light-gray);
-		}
-
-/*─╢ CONTENT ╟─────────────────────────*/
-
-		div.rightcol {
-				width: 70%;
-				float: right; /* margin-left: 0px; *//* margin-right: auto; */
-		}
-
-		div.cell {
-				box-sizing: border-box; /* height: 100%; *//* position: absolute; */
-				border: 1px dotted black;
-				background-color: rgba(195, 195, 195, 1.0);
-				background-color: var(--light-gray);
-				display: table-cell;
-				padding: 2px;
-		}
-
-/*─╢ TAG SPECIFIC ╟────────────────────*/
-
-		article:hover {
-				background-color: rgba(255, 255, 255, 0.2);
-				padding: 0px .5em 10px;
-				border: 1px solid var(--page-border-color);
-
-				border-width: 2px 2px 2px 2px;
-				box-shadow: 12px 12px 0px var(--page-border-color);
-				box-shadow: 12px 12px 0px black;
-				transition: 
-					box-shadow .25s,
-					border-width .25s,
-					top .25s,
-				  left .25s,
-					width .25s;
-		}
-
-		article {
-				/* background-color: rgba(255, 255, 255, 0.0); */
-				background-color: var(--light-gray);
-				border-width: 0px;
-				box-shadow: 0px 0px 0px var(--page-border-color);
-				position: relative;
-				top: 10px;
-				left: 10px;
-				width: 96%;
-		}
-
-		article + article {
-			margin-top: 1.8em;
-		}
-
-		article > h3 {
-				margin-bottom: 0.25em;
-		}
-		
-		article > p {
-				text-align: justify;
-				text-align-last: start;
-				color: var(--accent-gray);
-				margin-bottom: 0.25em;
-		}
-
-		article > p + p {
-				text-indent: 3em;
-		}
-
-		/*	Target first letter of first paragraph after h3 */
-		article > h3 + p::first-letter { 
-				font-size: 4.2em;
-				line-height: .8em;
-				vertical-align: top;
-				color: var(--accent-color);
-				font-family: 'Lora', serif;
-				float: left;
-	  		clear: auto;
-	  		margin: 0em .09em 0em 0em;
-		}
-
-		header {
-				background-color: rgba(255, 155, 155, 0.0);
-				background-color: var(--light-gray);
-		}
-
-		content {
-				background-color: rgba(155, 255, 155, 0.5);
-				background-color: var(--light-gray);
-		}
-
-		footer {
-				background-color: rgba(155, 155, 255, 0.0);
-				background-color: var(--light-gray);
-		}
-
-		footer > h2 {
-				color: rgba(0, 0, 0, 0.1);
-				color: var(--light-gray);
-				
-		}
-
-		h3 {
-/*				background-color: green;*/
-				display: block;
-				width: 100%;
-				padding: 0px 0px 0px;
-				margin: 10px 0px 10px;
-				border-bottom: 2px solid var(--page-border-color);
-		}
-
-		h3 > span {
-				display: inline-block;
-				background-color: transparent;
-				min-width: 100%;
-				margin: 0px;
-				padding: 0px;
-		}
-
-		.ar-title {
-				text-align: left;
-/*			break-after: auto;*/
-				font-size: 1.4em;
-/*				background-color: white;*/
-				position: relative;
-				top: .75em;
-		}
-
-		.ar-date {
-				text-align: right;
-				line-break: strict;
-				break-inside: avoid;
-/*			break-before: always;*/
-				font-size: .8em;
-/*				background-color: red;*/
-/*				position: relative;
-				top: -.6em;*/
-		}
-		
-		a:link,a:visited {
-				text-decoration: none;
-				color: #000000;
-		}
-		a:hover {
-				text-decoration: none;
-				color: #a0a0a0;
-		}
-		
-		#header {
-				text-align: left;
-				top: 0px;
-				/*left:  0px;*/
-				background-color: var(--light-gray);
-				height: var(--header-height);
-				/*max-width: var(--content-width);*/
-				font-size: 30px;
-				/*text-align: left;*/
-				/*vertical-align: bottom;*/ /* what's up with this? */
-				padding: 10px 10px 0px;
-				/*
-				padding-top: 10px;
-				padding-right: 10px;
-				padding-bottom: 0px;
-				padding-left: 10px;
-				*/
-				/*position: fixed; */
-				transition: 0.2s;
-				border: 30px solid white;
-				margin: 0 0px;
-				border-collapse: separate;
-				border-spacing: 10px;
-		}
-		
-		.fancy-half {
-			/*	display: inline-block;
-				margin: 0;
-				line-height: 1em;
-				font-family: Helvetica, Arial, sans-serif;
-				font-weight: bold;
-				font-size: 200px;	*/
-				font-size: 2em;
-				background: linear-gradient(to bottom, var(--light-red) 60%, var(--tan) 40%);
-				background-clip: text;
-				-webkit-background-clip: text;
-				-webkit-text-fill-color: transparent;
-		
-		}
-
-/*╔═══╗
-  ║ L ║ ╟────────────────────────────────
-  ╚═══╝*/
-
-@media (min-width: 1200px) {
-	:root {
-			--page-border-color: forestgreen;
-	}
-
-	body {
-			background-color: forestgreen;
-	}
-
-} /* end (max-width: 1200px) */
-
-
-
-
-/*╔═══╗
-  ║ M ║ ╟────────────────────────────────
-  ╚═══╝*/
-
-@media (min-width: 992px) and (max-width: 1199px) {
-	:root {
-			--page-border-color: deeppink;
-	}
-
-	body {
-			background-color: deeppink;
-	}
-
-
-} /* end (max-width: 1199px) */
-
-
-/*╔═══╗
-  ║ S ║ ╟────────────────────────────────
-  ╚═══╝*/
-
-
-@media (min-width: 768px) and (max-width: 991px) {
-:root {
-			--page-border-color: royalblue;
-	}
-
-	body {
-			background-color: royalblue;
-	}
-
-} /* end (max-width: 991px) */
-
-
-
-/*╔════╗
-  ║ XS ║ ╟───────────────────────────────
-  ╚════╝*/
-
-
-@media (max-width: 767px) {
-	:root {
-			--page-border-color: yellow;
-	}
-
-	body {
-			background-color: yellow;
-	}
-
-} /* end (max-width: 767px) */
-
-
-
-
-/*╔═════╗
-  ║ XXS ║ ╟──────────────────────────────
-  ╚═════╝*/
-
-
-@media (max-width: 479px) {
-	:root {
-			--page-border-color: red;
-	}
-
-	body {
-			background-color: red;
-	}
-
-
-
-
-                          /*/
-    ╔══════════════════════╗
-    ║ █ ▀ ▀▄▀▄▀▄▀▄▀ ▀ █ █  ║
-    ║ █▀▄▀▀▄██▄▀▄ ▄▀▀▄█▀▄▄ ║
-    ║ ███▀▄ █ █▀▀▄▄▄▄ ▄█ ▄ ║
-    ║ █▄▀█▀▄▀ ▀▀██▀ ▀▄▀▀█▄ ║
-    ║ █▄▀ ▀ ▀ ▄█▀█▀▄██   ▄ ║
-    ║ ███▄▀▀▀▄▀  ▀▀▀ ▀█▄▄▄ ║
-    ║ █▀███▀▀▄▀▀ ▀█▄   █▄▄ ║
-    ║ █▀██ █ █▄█▀▄█▄▄█▄▄█▄ ║
-    ║ █ ▀▄  ▄█▀▀▀ █▀██▀█ ▄ ║
-    ║ ██▄▄█▄▄████▄████▄▄█▄ ║
-    ╚══════════════════════╝
-   /*/
-
-} /* end (max-width: 479px) */
-
-	</style>
+<!--
+	<meta name="viewport" content="width= device-width,	height= device-height, user-scalable= no, initial-scale= 0.9, maximum-scale= 0.9, minimum-scale= 0.9, shrink-to-fit= no">
+-->
+	<title>;</title> <!-- This is intentionally poor SEO -->
+	<link rel="stylesheet" href="instar-style.css" type="text/css">
+	<script src="script.js"></script>
+	<meta name="author" content="Andrew Loy">
 </head>
+
 <body>
+	<div id="header-wrapper" class="wrapper">
+		<header id="header"><h1>                         <span class="fancy-half">;</span> a̶͕̞̰̞͉̗͆ͨͮ̎̓ͯpͤ̑ͬ҉̢̖̠͓̤̱͚p̗͊̓̇̏͝a̡̨̠̙̭͒͆ͨ́r̡̧͇̺̱̳̤̤͒͆̐͛̂̀̐͛́e̡̠̰͓͙̩̿̈ͭͅn̵͒ͯͭ̓̑͠͏̬̙͚͎͈͚͚̼̣t̜̻ͤ̿ͬ͑l̷̷̯̦̪͉̱͎̦ͨͥ̉y̝͂̈͑ͤͨ͘͟ ̵̞͙̄͌̆͑ͣ͠s̟̤̫̱̆ͧ̃͜ủ̶̖͓̫̞͆ͥ̏̑̕͞ḇ̸̠̣̜̚l̸͚ͦ̒͒ͮ͛͐i̙̭̘̬ͪ̾ͤ̽̒͌͢͝m̶̧̰̠͆̑ͮͨ̿ȉ̛̖̞̣͓̓ͨ͛nͥ̓ͭ͋ͣͤͅã̭̙͔̳̹̮͟lͫ̏̏͏̹̲̤̱</h1></header>
+	</div>
+	<!-- <div id="nav-wrapper">
+		<nav class="link-banner">
+			<ul>
+				<li>[</li><li> <a href="index.html" name="home">home</a></li>
+				<li>|</li><li> <a href="#" name="projects">projects</a></li>
+				<li>|</li><li> <a href="#" name="music">music</a></li>
+				<li>|</li><li> <a href="#" onclick="showContact()" name="contact">contact</a></li>
+				<li>|</li><li> <a href="#" name="github">github</a></li>
+				<li>|</li><li> <a href="past/2007.html" name="2007 visual style">2007</a>
+				</li><li> ]</li>
+			</ul>
+		</nav>
+	</div> -->
 
-	<div class="table">
+	<div id="content-wrapper">
+		<center>
+			<table id="maintable" cellpadding="0" cellspacing="0">
+				<tr><td colspan="3">&nbsp;</td></tr><!-- white row -->
 
-		<div class="row toprow">
+				<tr bgcolor="blue" height="30">
+					<td colspan="3" bgcolor="40403f"><!-- bgcolor="#40403f" -->
+						<nav class="link-banner">
+							<ul>
+								<li>[</li><li> <a href="index.html" name="home">home</a></li>
+								<li>|</li><li> <a href="#" name="projects">projects</a></li>
+								<li>|</li><li> <a href="http://soundcloud.com/drews-song/" name="music">music</a></li>
+								<li>|</li><li> <a href="#" onclick="showContact()" name="contact">contact</a></li>
+								<li>|</li><li> <a href="#" name="github">github</a></li>
+								<li>|</li><li> <a href="art.html" name="2007 visual style">art</a></li>
+								<li> ]</li>
+							</ul>
+					  </nav>
+				  </td>
+				</tr>
+				<tr><td colspan="3">&nbsp;</td></tr><!-- white row -->
+				<tr>
+				
+					<td class="leftcolumn">
+				
+						<div dir="rtl" id="leftscroller" >
+				
+							<div dir="ltr" id="main-contents">
+							<!--- post begin --->
+				
+								<div class="title-wrapper">
+									<span class="titletext"><a href="#">A Focal Point and a Straight Edge</a></span>
+									<span class="datetext">tuesday, february 24, 2025</span>
+								</div>
+				
+								A refreshing rain reached the foothills today, as if the sky realized
+								finally the stark reality of the humidity homework it had neglected,
+								and at once overcompensated in a sudden slathering
+								of drops and drips most unexpected.
+								<br><br>
+								I contemplated my calamity and harrumphed and complained, when an
+								elementary-aged boy sulked soaked into sight. His sagging backpack
+								hanging just below his headful of defeat, he was dripping, the
+								drumming drowning out the dragging soles of his feet.
+								<br><br>
+								Wishing I could give him my umbrella or, at the least, tell him for
+								all the squishing in his shoes, he was really some fella, I watched
+								him from further down the block, patiently waiting while traffic
+								splashed by until it was his turn to walk.
+								<br><br>
+								The clouds fled finally from the mountains, making for the beach, and
+								the sun found enough small holes to make Wilson-y, "Hi-ho neighbor!"
+								cameos, but nothing approached as affecting as an
+								adolescent-administered attitude adjustment.
+								<br><br>
+								Would that I could do more than these words on this page,
+								but as Doc Votaw would say, "weeee appreciate-cha, big guy,"
+								for soggin&rsquo; by my noggin today.
+								<br><br>
+								Everyone knows things get smaller the further they get away.
+								<br><br>
+								Provided you get the lines right, everything seems just as it should.
+								<br><br>
+								at 5:24 am 0 comments
+								<br><br>
+							<!--- post end --->
+							<!--- post begin --->
+								<div class="title-wrapper">
+									<span class="titletext"><a href="#">The Last of the Thumb Kids&rsquo;s Thumbs Up</a></span>
+									<span class="datetext">monday, february 23, 2025</span>
+								</div>
+								I find myself frequently mashing clumsily on the screen of my phone with my thumbs. Often the use of both will stifle progress, as the left thumb forgets the right thumb is leading and bris&eacute;s when it should have pli&eacute;d. Get your shit together, thumbs, for I've many an important emoji to transmit and nary a moment to tarry your transit.
+								<br><br>
+								Allegedly, we are all communicating at a rate without precedent; even the old clumsy-thumbsies. With pluses and likes and customizable feeds we're attaining attention we so basically need. It's an especially perfect time for phrenologists to peruse the pates of their potential patients, while future physiognomists fail to find faces.
+								<br><br>
+								While we're wondering where the world went, we're wandering where the world was.
+								<br><br>
+								Chin up. There are others and bears and things afoot.
+								<br><br>
+								Travel safely and be well. Less-than three, DL.
+								<br><br>
+								at 3:46 am 0 comments
+								<br><br>
+							<!--- post end --->
 
-			<div class="cell">
-				<header id="header">
-					<!-- <h1>Apparently Subliminal</h1> -->
-					<h1><span class="fancy-half">;</span> a̶͕̞̰̞͉̗͆ͨͮ̎̓ͯpͤ̑ͬ҉̢̖̠͓̤̱͚p̗͊̓̇̏͝a̡̨̠̙̭͒͆ͨ́r̡̧͇̺̱̳̤̤͒͆̐͛̂̀̐͛́e̡̠̰͓͙̩̿̈ͭͅn̵͒ͯͭ̓̑͠͏̬̙͚͎͈͚͚̼̣t̜̻ͤ̿ͬ͑l̷̷̯̦̪͉̱͎̦ͨͥ̉y̝͂̈͑ͤͨ͘͟ ̵̞͙̄͌̆͑ͣ͠s̟̤̫̱̆ͧ̃͜ủ̶̖͓̫̞͆ͥ̏̑̕͞ḇ̸̠̣̜̚l̸͚ͦ̒͒ͮ͛͐i̙̭̘̬ͪ̾ͤ̽̒͌͢͝m̶̧̰̠͆̑ͮͨ̿ȉ̛̖̞̣͓̓ͨ͛nͥ̓ͭ͋ͣͤͅã̭̙͔̳̹̮͟lͫ̏̏͏̹̲̤̱ </h1>
-				</header>
-			</div>
+								<br><br>
+							</div> <!-- end of ltr -->
+						</div><!-- end of rtl -->
+					</td><!-- end of leftcolumn -->
+					<td class="middlecolumn">&nbsp;</td>
+					<td class="rightcolumn">&nbsp;</td>
+				</tr>
 
-		</div>
+			</table>
 
-		<div class="row fullheight" style="height: 100%; background-color: rgba(155,155,255,0.6); background-color: var(--light-gray);">
+		</center>
 
-			<div class="cell leftcol fullheight">
-				<div class="fullheight bgimg">
-					<center>
-						<img src="avatar.png" class="margin: 0px auto">
-					  <a href="index.html"><div class="shadowblurbox navbutton">Home</div></a>
-					  <a href="index.html"><div class="shadowblurbox navbutton">About</div></a>
-					  <a href="nailto:contact@drewloy.com"><div class="shadowblurbox navbutton">Contact</div></a>
-					  <br>
-					</center>
-				</div>					
-			</div>
-			<div class="cell rightcol fullheight">
-				<content>
-					<!-- <h2>CONTENT</h2> -->
-
-<!-- ARTICLE -->
-					<article>
-						<h3><span class="ar-title">Happy Christmas</span><span class="ar-date">December 25, 2025</span></h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra mauris in aliquam sem. Quam quisque id diam vel. Luctus accumsan tortor posuere ac. Vitae turpis massa sed elementum tempus. Gravida neque convallis a cras semper.
-						</p>
-						<p>
-							Magna sit amet purus gravida quis blandit turpis. Molestie ac feugiat sed lectus vestibulum mattis. Nisi vitae suscipit tellus mauris a diam maecenas. Vitae justo eget magna fermentum iaculis eu non diam phasellus. Elementum sagittis vitae et leo duis ut diam quam nulla. Sagittis eu volutpat odio facilisis mauris.
-						</p>
-						<p>
-							Ut consequat semper viverra nam libero justo laoreet. Eget mauris pharetra et ultrices neque ornare aenean euismod. Dignissim suspendisse in est ante in nibh mauris cursus. Arcu felis bibendum ut tristique et egestas quis ipsum. Lobortis feugiat vivamus at augue eget arcu dictum. Mi ipsum faucibus vitae aliquet nec ullamcorper sit. Ullamcorper dignissim cras tincidunt lobortis feugiat.
-						</p>
-					</article>
-<!--/ARTICLE -->
-
-<!-- ARTICLE -->
-					<article>
-						<h3><span class="ar-title">Boxing Day</span><span class="ar-date">December 26, 2025</span></h3>
-						<p>
-							Nisi quis eleifend quam adipiscing vitae proin. Euismod nisi porta lorem mollis aliquam. Nunc aliquet bibendum enim facilisis gravida neque convallis. Sed viverra tellus in hac habitasse platea. Quam quisque id diam vel. Luctus accumsan tortor posuere ac.
-						</p>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra mauris in aliquam sem. Quam quisque id diam vel. Luctus accumsan tortor posuere ac. Vitae turpis massa sed elementum tempus. Gravida neque convallis a cras semper.
-						</p>
-						<p>
-							Consectetur lorem donec massa sapien faucibus et molestie ac. Pellentesque dignissim enim sit amet. Posuere sollicitudin aliquam ultrices sagittis orci a. Consequat ac felis donec et odio pellentesque diam volutpat.
-						</p>
-					</article>
-<!--/ARTICLE -->
-
-
-				</content>
-			</div>
-
-		</div>
-
-		<div class="row bottomrow">
-
-			<div class="cell">
-				<footer>
-				<h2>© 2025 Apparently Subliminal</h2>
-				</footer>
-			</div>
-
-		</div>
-
-	</div><!-- /table -->
-
+	</div>
+	<br>
+	<div id="footer-wrapper">
+	<div id="footer">© 2022 apparentlysubliminal.github.io</div>
+	</div>
 </body>
 </html>
-
-<!-- -- -- -- -- -- -- -- -- --<
-    ╔══════════════════════╗
-    ║ █ ▀ ▀▄▀▄▀▄▀▄▀ ▀ █ █  ║
-    ║ █▀▄▀▀▄██▄▀▄ ▄▀▀▄█▀▄▄ ║
-    ║ ███▀▄ █ █▀▀▄▄▄▄ ▄█ ▄ ║
-    ║ █▄▀█▀▄▀ ▀▀██▀ ▀▄▀▀█▄ ║
-    ║ █▄▀ ▀ ▀ ▄█▀█▀▄██   ▄ ║
-    ║ ███▄▀▀▀▄▀  ▀▀▀ ▀█▄▄▄ ║
-    ║ █▀███▀▀▄▀▀ ▀█▄   █▄▄ ║
-    ║ █▀██ █ █▄█▀▄█▄▄█▄▄█▄ ║
-    ║ █ ▀▄  ▄█▀▀▀ █▀██▀█ ▄ ║
-    ║ ██▄▄█▄▄████▄████▄▄█▄ ║
-    ╚══════════════════════╝
->!-- -- -- -- -- -- -- -- -- -->
