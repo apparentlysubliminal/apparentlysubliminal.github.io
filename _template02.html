@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,6 +13,18 @@
   :root {
 				--page-border-color: green;
 				--header-height: 245px;
+				
+				--main-txt-color: #ffffff;
+				--light-gray: #60605f;
+				--hover-gray: #666f6c;
+				--dark-gray: #40403f;
+				--tan: #c3ad80;
+				--light-blue: #cfe2f3;
+				--light-red: #f3e2cf;
+				--content-width: 85%;
+				--header-height: 245px;
+
+				
 	  }
 
 	::selection {
@@ -59,7 +71,8 @@
 				height: 100%;
 				width: 100%;
 				border: 20px solid var(--page-border-color);
-				background-color: rgba(255, 255, 255, 0.75);
+				/*background-color: rgba(255, 255, 255, 0.75); */
+				background-color: var(--light-gray);
 				position: absolute;
 				box-sizing: border-box;
 				display: table;
@@ -69,6 +82,7 @@
 /*			height: 100%;*/
 				width: 100%;
 				background-color: rgba(155, 155, 255, 0.0);
+				background-color: var(--light-gray);
 /*			position: absolute;*/
 				display: table-row;
 		}
@@ -109,6 +123,7 @@
 				background-image: url('backgroundtile.png');
 				background-position: center;
 				background-repeat: repeat-y;
+				background-color: var(--light-gray);
 		}
 
 /*─╢ CONTENT ╟─────────────────────────*/
@@ -122,19 +137,21 @@
 				box-sizing: border-box; /* height: 100%; *//* position: absolute; */
 				border: 1px dotted black;
 				background-color: rgba(195, 195, 195, 1.0);
+				background-color: var(--light-gray);
 				display: table-cell;
 				padding: 2px;
 		}
 
 /*─╢ TAG SPECIFIC ╟────────────────────*/
 
-		article {
+		article:hover {
 				background-color: rgba(255, 255, 255, 0.2);
 				padding: 0px .5em 10px;
 				border: 1px solid var(--page-border-color);
 
 				border-width: 2px 2px 2px 2px;
 				box-shadow: 12px 12px 0px var(--page-border-color);
+				box-shadow: 12px 12px 0px black;
 				transition: 
 					box-shadow .25s,
 					border-width .25s,
@@ -143,8 +160,9 @@
 					width .25s;
 		}
 
-		article:hover {
-				background-color: rgba(255, 255, 255, 0.0);
+		article {
+				/* background-color: rgba(255, 255, 255, 0.0); */
+				background-color: var(--light-gray);
 				border-width: 0px;
 				box-shadow: 0px 0px 0px var(--page-border-color);
 				position: relative;
@@ -157,9 +175,10 @@
 			margin-top: 1.8em;
 		}
 
-    article > h3 {
+		article > h3 {
 				margin-bottom: 0.25em;
-    }
+		}
+		
 		article > p {
 				text-align: justify;
 				text-align-last: start;
@@ -185,18 +204,23 @@
 
 		header {
 				background-color: rgba(255, 155, 155, 0.0);
+				background-color: var(--light-gray);
 		}
 
 		content {
 				background-color: rgba(155, 255, 155, 0.5);
+				background-color: var(--light-gray);
 		}
 
 		footer {
 				background-color: rgba(155, 155, 255, 0.0);
+				background-color: var(--light-gray);
 		}
 
 		footer > h2 {
 				color: rgba(0, 0, 0, 0.1);
+				color: var(--light-gray);
+				
 		}
 
 		h3 {
@@ -234,6 +258,55 @@
 /*				background-color: red;*/
 /*				position: relative;
 				top: -.6em;*/
+		}
+		
+		a:link,a:visited {
+				text-decoration: none;
+				color: #000000;
+		}
+		a:hover {
+				text-decoration: none;
+				color: #a0a0a0;
+		}
+		
+		#header {
+				text-align: left;
+				top: 0px;
+				/*left:  0px;*/
+				background-color: var(--light-gray);
+				height: var(--header-height);
+				/*max-width: var(--content-width);*/
+				font-size: 30px;
+				/*text-align: left;*/
+				/*vertical-align: bottom;*/ /* what's up with this? */
+				padding: 10px 10px 0px;
+				/*
+				padding-top: 10px;
+				padding-right: 10px;
+				padding-bottom: 0px;
+				padding-left: 10px;
+				*/
+				/*position: fixed; */
+				transition: 0.2s;
+				border: 30px solid white;
+				margin: 0 0px;
+				border-collapse: separate;
+				border-spacing: 10px;
+		}
+		
+		.fancy-half {
+			/*	display: inline-block;
+				margin: 0;
+				line-height: 1em;
+				font-family: Helvetica, Arial, sans-serif;
+				font-weight: bold;
+				font-size: 200px;	*/
+				font-size: 2em;
+				background: linear-gradient(to bottom, var(--light-red) 60%, var(--tan) 40%);
+				background-clip: text;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+		
 		}
 
 /*╔═══╗
@@ -351,22 +424,23 @@
 		<div class="row toprow">
 
 			<div class="cell">
-				<header>
-					<h1>Apparently Subliminal</h1>
+				<header id="header">
+					<!-- <h1>Apparently Subliminal</h1> -->
+					<h1><span class="fancy-half">;</span> a̶͕̞̰̞͉̗͆ͨͮ̎̓ͯpͤ̑ͬ҉̢̖̠͓̤̱͚p̗͊̓̇̏͝a̡̨̠̙̭͒͆ͨ́r̡̧͇̺̱̳̤̤͒͆̐͛̂̀̐͛́e̡̠̰͓͙̩̿̈ͭͅn̵͒ͯͭ̓̑͠͏̬̙͚͎͈͚͚̼̣t̜̻ͤ̿ͬ͑l̷̷̯̦̪͉̱͎̦ͨͥ̉y̝͂̈͑ͤͨ͘͟ ̵̞͙̄͌̆͑ͣ͠s̟̤̫̱̆ͧ̃͜ủ̶̖͓̫̞͆ͥ̏̑̕͞ḇ̸̠̣̜̚l̸͚ͦ̒͒ͮ͛͐i̙̭̘̬ͪ̾ͤ̽̒͌͢͝m̶̧̰̠͆̑ͮͨ̿ȉ̛̖̞̣͓̓ͨ͛nͥ̓ͭ͋ͣͤͅã̭̙͔̳̹̮͟lͫ̏̏͏̹̲̤̱ </h1>
 				</header>
 			</div>
 
 		</div>
 
-		<div class="row fullheight" style="height: 100%; background-color: rgba(155,155,255,0.6);">
+		<div class="row fullheight" style="height: 100%; background-color: rgba(155,155,255,0.6); background-color: var(--light-gray);">
 
 			<div class="cell leftcol fullheight">
 				<div class="fullheight bgimg">
 					<center>
 						<img src="avatar.png" class="margin: 0px auto">
-					  <div class="shadowblurbox navbutton">Home</div>
-					  <div class="shadowblurbox navbutton">About</div>
-					  <div class="shadowblurbox navbutton">Contact</div>
+					  <a href="index.html"><div class="shadowblurbox navbutton">Home</div></a>
+					  <a href="index.html"><div class="shadowblurbox navbutton">About</div></a>
+					  <a href="nailto:contact@drewloy.com"><div class="shadowblurbox navbutton">Contact</div></a>
 					  <br>
 					</center>
 				</div>					
@@ -377,7 +451,7 @@
 
 <!-- ARTICLE -->
 					<article>
-						<h3><span class="ar-title">Happy Christmas</span><span class="ar-date">December 25, 2022</span></h3>
+						<h3><span class="ar-title">Happy Christmas</span><span class="ar-date">December 25, 2025</span></h3>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra mauris in aliquam sem. Quam quisque id diam vel. Luctus accumsan tortor posuere ac. Vitae turpis massa sed elementum tempus. Gravida neque convallis a cras semper.
 						</p>
@@ -392,7 +466,7 @@
 
 <!-- ARTICLE -->
 					<article>
-						<h3><span class="ar-title">Boxing Day</span><span class="ar-date">December 26, 2022</span></h3>
+						<h3><span class="ar-title">Boxing Day</span><span class="ar-date">December 26, 2025</span></h3>
 						<p>
 							Nisi quis eleifend quam adipiscing vitae proin. Euismod nisi porta lorem mollis aliquam. Nunc aliquet bibendum enim facilisis gravida neque convallis. Sed viverra tellus in hac habitasse platea. Quam quisque id diam vel. Luctus accumsan tortor posuere ac.
 						</p>
@@ -415,7 +489,7 @@
 
 			<div class="cell">
 				<footer>
-				<h2>Apparently Subliminal</h2>
+				<h2>© 2025 Apparently Subliminal</h2>
 				</footer>
 			</div>
 
