@@ -27,6 +27,7 @@ function scrollFunction() {
     // document.getElementById("header").style.paddingLeft = "150px";
     // document.getElementById("header").style.display = "flex";   
     document.getElementById("header").style.maxWidth = "var(--content-width)";
+	    document.getElementById("header").style.maxWidth = "85%";
     document.getElementById("header").style.border = "30px solid white";
 
   }
